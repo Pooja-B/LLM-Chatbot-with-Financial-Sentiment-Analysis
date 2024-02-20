@@ -1,6 +1,6 @@
 # LLM-Chatbot-with-Financial-Sentiment-Analysis
 
-LLM chat bot with Financial sentiment analysis using by OpenVINO
+LLM chat bot with Financial sentiment analysis using OpenVINO
 
 Based on https://github.com/openvinotoolkit/openvino_notebooks#-ai-trends---notebook
 
@@ -28,12 +28,6 @@ LLMs require extensive memory to store the weights during inference, and can ben
 Enabling the inference of exceptionally large models that cannot be accommodated in the memory of the device;
 Improving the inference performance of the models by reducing the latency of the memory access when computing the operations with weights, for example, Linear layers.
 
-## Benchmarking Results 
-Generative AI benchmarks on Intel CPU-only
-
-
-
-![image](https://github.com/Pooja-B/LLM-Chatbot-with-Financial-Sentiment-Analysis/assets/9071192/7c9d5893-f9ce-4e1d-a36e-f8db51b29ede)
 
 
 #### Detailed benchmark reports are included in the Benchmark folder for reference. 
