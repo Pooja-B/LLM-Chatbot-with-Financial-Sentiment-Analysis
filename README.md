@@ -26,9 +26,15 @@ LLMs require extensive memory to store the weights during inference, can benefit
 Enabling the inference of exceptionally large models that cannot be accommodated in the memory of the device;
 Improving the inference performance of the models by reducing the latency of the memory access when computing the operations with weights, for example, Linear layers.
 
+## Benchmarking Results 
+Generative AI benchmarks on Intel CPU-only
 
-### Detailed benchmark reports are included for reference. 
 
+
+![image](https://github.com/Pooja-B/LLM-Chatbot-with-Financial-Sentiment-Analysis/assets/9071192/7c9d5893-f9ce-4e1d-a36e-f8db51b29ede)
+
+
+### Detailed benchmark reports are included in Benchmark folder for reference. 
 
 
 ![alt text](https://github.com/Pooja-B/LLM-Chatbot-with-Financial-Sentiment-Analysis/blob/main/SentimentAnalysisLLMChatbot.png)
