@@ -1,0 +1,23 @@
+iteration,model,framework,device,pretrain_time(s),input_size,infer_count,generation_time(s),output_size,latency(ms),1st_latency(ms),2nd_avg_latency(ms),precision,max_rss_mem(MB),max_shared_mem(MB),prompt_idx,1st_infer_latency(ms),2nd_infer_avg_latency(ms),num_beams,batch_size,tokenization_time,detokenization_time,result_md5
+0,red-pajama-3b-chat,ov(INT4_compressed_weights),cpu,11.81026,1,512,107.26847,512,209.50872,4611.0733,200.8908,unknown,,,0,4609.0591,199.38792,1,1,1.4731,0.6111,['c08bfa2218ded61049cb08ce838f0f6c']
+1,red-pajama-3b-chat,ov(INT4_compressed_weights),cpu,,1,512,89.93197,512,175.64838,241.442,175.51478,unknown,,,0,240.4056,174.03058,1,1,0.3363,0.6332,['c08bfa2218ded61049cb08ce838f0f6c']
+2,red-pajama-3b-chat,ov(INT4_compressed_weights),cpu,,1,512,93.91322,512,183.42426,261.7861,183.26374,unknown,,,0,260.2171,181.79399,1,1,0.3035,1.1868,['c08bfa2218ded61049cb08ce838f0f6c']
+-1,red-pajama-3b-chat,ov(INT4_compressed_weights),cpu,,1.0,512.0,91.9226,512.0,179.53632,251.61405,179.38926,unknown,,,0,250.31135,177.91229,1,1,0.3035,1.1868,['c08bfa2218ded61049cb08ce838f0f6c']
+,,,,,,,,,,,,,,,,,,,,,,
+input_size: Input token size,,,,,,,,,,,,,,,,,,,,,,
+output_size: Text/Code generation models: generated text token size,,,,,,,,,,,,,,,,,,,,,,
+infer_count: Limit the Text/Code generation models' output token size,,,,,,,,,,,,,,,,,,,,,,
+latency: Text/Code generation models: ms/token. Output token size / generation time,,,,,,,,,,,,,,,,,,,,,,
+1st_latency: Text/Code generation models: Fisrt token latency,,,,,,,,,,,,,,,,,,,,,,
+2nd_avg_latency: Text/Code generation models: Other tokens (exclude first token) latency,,,,,,,,,,,,,,,,,,,,,,
+1st_infer_latency: Text/Code generation models: Fisrt inference latency,,,,,,,,,,,,,,,,,,,,,,
+2nd_infer_avg_latency: Text/Code generation models: Other inferences (exclude first inference) latency,,,,,,,,,,,,,,,,,,,,,,
+result_md5: MD5 of generated text,,,,,,,,,,,,,,,,,,,,,,
+prompt_idx: Index of prompts,,,,,,,,,,,,,,,,,,,,,,
+tokenization_time: Tokenizer encode time,,,,,,,,,,,,,,,,,,,,,,
+detokenization_time: Tokenizer decode time,,,,,,,,,,,,,,,,,,,,,,
+pretrain_time: Total time of load model and compile model,,,,,,,,,,,,,,,,,,,,,,
+generation_time: Time for one interaction. (e.g. The duration of  answering one question or generating one picture),,,,,,,,,,,,,,,,,,,,,,
+iteration=0: warm-up; iteration=-1: average (exclude warm-up),,,,,,,,,,,,,,,,,,,,,,
+max_rss_mem: max rss memory consumption;the value in -1 iteration row is the maximum value of all available RSS memory numbers in iterations,,,,,,,,,,,,,,,,,,,,,,
+max_shared_mem: max shared memory consumption;the value in -1 iteration row is the maximum value of all available shared memory numbers in iterations,,,,,,,,,,,,,,,,,,,,,,
