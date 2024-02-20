@@ -2,7 +2,10 @@
 
 LLM chat bot with Financial sentiment analysis using by OpenVINO
 
-Based on https://github.com/openvinotoolkit/openvino_notebooks#-ai-trends---notebooks
+Based on https://github.com/openvinotoolkit/openvino_notebooks#-ai-trends---notebook
+
+![](https://github.com/Pooja-B/LLM-Chatbot-with-Financial-Sentiment-Analysis/blob/main/demo_LLM.gif)
+
 
 We will further integrate a Financial Sentiment Analysis using Prosus/FinBert model.
 
