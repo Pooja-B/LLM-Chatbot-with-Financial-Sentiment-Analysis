@@ -1,0 +1,23 @@
+iteration,model,framework,device,pretrain_time(s),input_size,infer_count,generation_time(s),output_size,latency(ms),1st_latency(ms),2nd_avg_latency(ms),precision,max_rss_mem(MB),max_shared_mem(MB),prompt_idx,1st_infer_latency(ms),2nd_infer_avg_latency(ms),num_beams,batch_size,tokenization_time,detokenization_time,result_md5
+0,tiny-llama-1b-chat,ov(FP16),cpu,3.63777,8,512,2.38514,11,216.83131,767.9374,161.5734,FP16,,,0,766.9078,160.78365,1,1,1.2921,0.2172,['2880615b55b875d480212888b4d5a624']
+1,tiny-llama-1b-chat,ov(FP16),cpu,,8,512,1.83834,11,167.12136,171.6542,166.57464,FP16,,,0,170.9193,165.77555,1,1,0.2376,0.2175,['2880615b55b875d480212888b4d5a624']
+2,tiny-llama-1b-chat,ov(FP16),cpu,,8,512,1.68666,11,153.33298,223.6246,146.13234,FP16,,,0,222.9205,145.33508,1,1,0.8934,0.15,['2880615b55b875d480212888b4d5a624']
+-1,tiny-llama-1b-chat,ov(FP16),cpu,,8.0,512.0,1.7625,11.0,160.22717,197.6394,156.35349,FP16,,,0,196.9199,155.55531,1,1,0.8934,0.15,['2880615b55b875d480212888b4d5a624']
+,,,,,,,,,,,,,,,,,,,,,,
+input_size: Input token size,,,,,,,,,,,,,,,,,,,,,,
+output_size: Text/Code generation models: generated text token size,,,,,,,,,,,,,,,,,,,,,,
+infer_count: Limit the Text/Code generation models' output token size,,,,,,,,,,,,,,,,,,,,,,
+latency: Text/Code generation models: ms/token. Output token size / generation time,,,,,,,,,,,,,,,,,,,,,,
+1st_latency: Text/Code generation models: Fisrt token latency,,,,,,,,,,,,,,,,,,,,,,
+2nd_avg_latency: Text/Code generation models: Other tokens (exclude first token) latency,,,,,,,,,,,,,,,,,,,,,,
+1st_infer_latency: Text/Code generation models: Fisrt inference latency,,,,,,,,,,,,,,,,,,,,,,
+2nd_infer_avg_latency: Text/Code generation models: Other inferences (exclude first inference) latency,,,,,,,,,,,,,,,,,,,,,,
+result_md5: MD5 of generated text,,,,,,,,,,,,,,,,,,,,,,
+prompt_idx: Index of prompts,,,,,,,,,,,,,,,,,,,,,,
+tokenization_time: Tokenizer encode time,,,,,,,,,,,,,,,,,,,,,,
+detokenization_time: Tokenizer decode time,,,,,,,,,,,,,,,,,,,,,,
+pretrain_time: Total time of load model and compile model,,,,,,,,,,,,,,,,,,,,,,
+generation_time: Time for one interaction. (e.g. The duration of  answering one question or generating one picture),,,,,,,,,,,,,,,,,,,,,,
+iteration=0: warm-up; iteration=-1: average (exclude warm-up),,,,,,,,,,,,,,,,,,,,,,
+max_rss_mem: max rss memory consumption;the value in -1 iteration row is the maximum value of all available RSS memory numbers in iterations,,,,,,,,,,,,,,,,,,,,,,
+max_shared_mem: max shared memory consumption;the value in -1 iteration row is the maximum value of all available shared memory numbers in iterations,,,,,,,,,,,,,,,,,,,,,,
